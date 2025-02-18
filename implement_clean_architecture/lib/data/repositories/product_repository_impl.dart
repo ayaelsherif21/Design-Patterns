@@ -5,7 +5,7 @@ import '../../domain/repositories/product_repository.dart';
 class ProductRepositoryImpl implements ProductRepository {
   @override
   Future<List<Product>> getProducts() async {
-    await Future.delayed(Duration(seconds: 2)); // Simulating API delay
+    await Future.delayed(Duration(seconds: 2)); 
 
     return [
       Product(id: 1, name: "Laptop"),

@@ -39,9 +39,9 @@ class ProductScreen extends StatelessWidget {
                               vertical: 10, horizontal: 16),
                           leading: CircleAvatar(
                             backgroundColor:
-                                Colors.deepPurple, // Background color
+                                Colors.deepPurple, 
                             child: Icon(Icons.shopping_cart,
-                                color: Colors.white), // White icon
+                                color: Colors.white),
                           ),
                           title: Text(
                             product.name,
