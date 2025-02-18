@@ -12,7 +12,7 @@ class ProductScreen extends StatelessWidget {
         title: Text('Products', style: TextStyle(fontWeight: FontWeight.bold)),
         backgroundColor: Colors.deepPurple,
         elevation: 4,
-        foregroundColor: Colors.,
+        foregroundColor: Colors.white,
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
@@ -38,14 +38,18 @@ class ProductScreen extends StatelessWidget {
                           contentPadding: EdgeInsets.symmetric(
                               vertical: 10, horizontal: 16),
                           leading: CircleAvatar(
-                            backgroundColor: Colors.deepPurple.shade100,
-                            child: Icon(Icons.shopping_cart, color: Colors.deepPurple),
+                            backgroundColor:
+                                Colors.deepPurple, // Background color
+                            child: Icon(Icons.shopping_cart,
+                                color: Colors.white), // White icon
                           ),
                           title: Text(
                             product.name,
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.w600),
                           ),
-                          trailing: Icon(Icons.arrow_forward_ios, color: Colors.grey),
+                          trailing:
+                              Icon(Icons.arrow_forward_ios, color: Colors.grey),
                         ),
                       );
                     },
@@ -54,7 +58,7 @@ class ProductScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () => viewModel.fetchProducts(),
         backgroundColor: Colors.deepPurple,
-        child: Icon(Icons.refresh),
+        child: Icon(Icons.refresh , color: Colors.white),
       ),
     );
   }
